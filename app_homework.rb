@@ -70,7 +70,7 @@ until (jin.die? || villains.empty?) do
             puts "\n"
 
             allies.each do |ally|
-                ally.delete(ally) if ally.die?
+                allies.delete(ally) if ally.die?
             end
             puts "\n"
         else
